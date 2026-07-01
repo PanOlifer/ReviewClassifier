@@ -1,0 +1,91 @@
+{
+  "label_source": "manual_5000",
+  "label_file": "/Users/artemolifirenko/Documents/Work_balance/философия/фильмы/итоги/kinopoisk_reviewer_ready_pipeline/data/labels/labeled_fragments_5000.xlsx",
+  "total_labeled_fragments": 5000,
+  "train_size": 4000,
+  "test_size": 1000,
+  "vocab_size": 6000,
+  "device": "cpu",
+  "accuracy": 0.454,
+  "macro_f1": 0.4371979912444268,
+  "class_weights": {
+    "mixed": 1.1111111111111112,
+    "optimism": 0.9523809523809523,
+    "skepticism": 0.9523809523809523
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0991902885437013,
+      "test_loss": 1.0939209327697754,
+      "test_macro_f1": 0.29176679109834186
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.094933364868164,
+      "test_loss": 1.0906751356124877,
+      "test_macro_f1": 0.29732944025393543
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.0909872999191284,
+      "test_loss": 1.0884321126937866,
+      "test_macro_f1": 0.3255511340175942
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.0877878713607787,
+      "test_loss": 1.0851734342575072,
+      "test_macro_f1": 0.36110202650970497
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.0843134336471558,
+      "test_loss": 1.0823845319747925,
+      "test_macro_f1": 0.3650917296189646
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.0781177701950073,
+      "test_loss": 1.0782719650268555,
+      "test_macro_f1": 0.3865626444274293
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.0768626232147216,
+      "test_loss": 1.075555233001709,
+      "test_macro_f1": 0.3871061199349945
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.0706157493591308,
+      "test_loss": 1.0717656297683715,
+      "test_macro_f1": 0.4056334328692833
+    },
+    {
+      "epoch": 9,
+      "train_loss": 1.0633956460952758,
+      "test_loss": 1.0657404136657715,
+      "test_macro_f1": 0.4286221653622346
+    },
+    {
+      "epoch": 10,
+      "train_loss": 1.0607871627807617,
+      "test_loss": 1.0609882688522339,
+      "test_macro_f1": 0.4239695602434869
+    },
+    {
+      "epoch": 11,
+      "train_loss": 1.0500826721191405,
+      "test_loss": 1.0576604452133178,
+      "test_macro_f1": 0.4300782162227945
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.0414864292144776,
+      "test_loss": 1.0525694599151612,
+      "test_macro_f1": 0.4371979912444268
+    }
+  ],
+  "note": "1"
+}

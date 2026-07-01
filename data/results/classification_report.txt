@@ -1,0 +1,9 @@
+Baseline model: TF-IDF + Logistic Regression\nLabel source: manual_5000\nLabel file: /Users/artemolifirenko/Documents/Work_balance/философия/фильмы/итоги/kinopoisk_reviewer_ready_pipeline/data/labels/labeled_fragments_5000.xlsx\nTotal labeled fragments: 5000\nTrain size: 4000\nTest size: 1000\nAccuracy: 0.6730\nMacro-F1: 0.6712\n5-fold macro-F1: mean=0.6556; std=0.0115\n\n              precision    recall  f1-score   support
+
+       mixed     0.5536    0.6200    0.5849       300
+    optimism     0.7692    0.7143    0.7407       350
+  skepticism     0.6991    0.6771    0.6880       350
+
+    accuracy                         0.6730      1000
+   macro avg     0.6740    0.6705    0.6712      1000
+weighted avg     0.6800    0.6730    0.6755      1000

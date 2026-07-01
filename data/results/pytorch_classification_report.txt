@@ -1,0 +1,21 @@
+PyTorch model: EmbeddingBag + Linear classifier
+Label source: manual_5000
+Label file: /Users/artemolifirenko/Documents/Work_balance/философия/фильмы/итоги/kinopoisk_reviewer_ready_pipeline/data/labels/labeled_fragments_5000.xlsx
+Total labeled fragments: 5000
+Train size: 4000
+Test size: 1000
+Vocab size: 6000
+Device: cpu
+Accuracy: 0.4540
+Macro-F1: 0.4372
+Class weights: {'mixed': 1.1111111111111112, 'optimism': 0.9523809523809523, 'skepticism': 0.9523809523809523}
+
+              precision    recall  f1-score   support
+
+       mixed     0.3857    0.2867    0.3289       300
+    optimism     0.5484    0.3886    0.4548       350
+  skepticism     0.4386    0.6629    0.5279       350
+
+    accuracy                         0.4540      1000
+   macro avg     0.4575    0.4460    0.4372      1000
+weighted avg     0.4611    0.4540    0.4426      1000

@@ -1,0 +1,23 @@
+Enhanced PyTorch polar classifier: EmbeddingBag + Linear layers
+Training mode: manual_only
+Manual polar fragments: 3500
+Weak polar fragments used for training: 0
+Train size: 2800
+Test size: 700
+Vocab size: 12000
+Device: cpu
+Accuracy: 0.7614
+Macro-F1: 0.7603
+5-fold macro-F1: mean=0.7603; std=0.0000
+Class weights: {'optimism': 1.0, 'skepticism': 1.0}
+Confusion matrix labels: ['optimism', 'skepticism']
+Confusion matrix: [[242, 108], [59, 291]]
+
+              precision    recall  f1-score   support
+
+    optimism     0.8040    0.6914    0.7435       350
+  skepticism     0.7293    0.8314    0.7770       350
+
+    accuracy                         0.7614       700
+   macro avg     0.7667    0.7614    0.7603       700
+weighted avg     0.7667    0.7614    0.7603       700
