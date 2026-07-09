@@ -2,15 +2,15 @@ import subprocess
 import sys
 
 STEPS = [
-    "src.00_inspect_dataset",
-    "src.01_prepare_fragments",
-    "src.03_build_weak_labels",
-    "src.04_train_baseline",
-    "src.05_predict_fragments",
-    "src.06_aggregate_results",
-    "src.07_make_heatmaps",
-    "src.08_lexical_analysis",
-    "src.09_train_pytorch_classifier",
+    "src.inspect_dataset",
+    "src.prepare_fragments",
+    "src.build_weak_labels",
+    "src.train_baseline",
+    "src.predict_fragments",
+    "src.aggregate_results",
+    "src.make_heatmaps",
+    "src.lexical_analysis",
+    "src.train_pytorch_classifier",
 ]
 
 

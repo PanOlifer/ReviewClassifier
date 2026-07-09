@@ -2,4 +2,4 @@
 import subprocess
 import sys
 
-subprocess.run([sys.executable, "-m", "src.11_train_pytorch_polar_classifier"], check=True)
+subprocess.run([sys.executable, "-m", "src.train_pytorch_polar_classifier"], check=True)

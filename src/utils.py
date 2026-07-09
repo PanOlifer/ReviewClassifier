@@ -51,12 +51,11 @@ def year_from_review_date(value) -> Optional[int]:
     - строки с русскими месяцами: 5 января 2017, 12 дек. 2020;
     - любые строки, где явно присутствует год 19xx или 20xx.
 
-    Если год не найден, возвращает None, а не выбрасывает исключение.
+    Если год не найден, возвращает None.
     """
     if value is None or (isinstance(value, float) and pd.isna(value)):
         return None
 
-    # Timestamp / datetime
     try:
         if hasattr(value, "year") and not isinstance(value, str):
             y = int(value.year)
@@ -80,12 +79,10 @@ def year_from_review_date(value) -> Optional[int]:
     if not s:
         return None
 
-    # Direct year extraction. This is the safest for Russian dates.
     m = re.search(r"\b(19\d{2}|20\d{2})\b", s)
     if m:
         return int(m.group(1))
 
-    # Russian month names without explicit standard parser support.
     months = {
         "января": "01", "янв": "01", "янв.": "01",
         "февраля": "02", "фев": "02", "фев.": "02",
@@ -106,7 +103,6 @@ def year_from_review_date(value) -> Optional[int]:
         if ru in s_low:
             s_low = s_low.replace(ru, mm)
 
-    # Try common date parsers after normalization.
     for dayfirst in (True, False):
         dt = pd.to_datetime(s_low, errors="coerce", dayfirst=dayfirst)
         if not pd.isna(dt):

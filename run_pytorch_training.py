@@ -2,10 +2,10 @@ import subprocess
 import sys
 
 STEPS = [
-    "src.00_inspect_dataset",
-    "src.01_prepare_fragments",
-    "src.03_build_weak_labels",
-    "src.09_train_pytorch_classifier",
+    "src.inspect_dataset",
+    "src.prepare_fragments",
+    "src.build_weak_labels",
+    "src.train_pytorch_classifier",
 ]
 
 
